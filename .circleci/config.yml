@@ -2,6 +2,9 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
+notify:
+   webhooks:
+     - url: https://hooks.glip.com/webhook/b5e02f71-e324-42da-898c-2bbe9daedecb
 version: 2
 jobs:
   build:
