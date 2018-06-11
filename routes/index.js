@@ -36,13 +36,13 @@ router.get('/', function (req, res, next) {
 
 /* GET shop */
 router.get('/shop', function (req, res, next) {
-    res.redirect(SHOP_URL)
+    res.redirect(SHOP_URL);
 });
 
 /* GET blog */
 router.get('/blog', function (req, res, next) {
 
-    res.redirect(BLOG_URL)
+    res.redirect(BLOG_URL);
 });
 
 
