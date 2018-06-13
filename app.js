@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var http = require('http');
+var enforce = require('express-sslify');
 
 var indexRouter = require('./routes/index');
 
@@ -34,6 +36,12 @@ app.use(function (err, req, res, next) {
     // render the error page
     res.status(err.status || 500);
     res.render('error');
+});
+
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
+
+http.createServer(app).listen(app.get('port'), function() {
+    console.log('Express server listening on port ' + app.get('port'));
 });
 
 module.exports = app;
