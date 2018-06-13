@@ -11,7 +11,7 @@ router.get('/', function (req, res, next) {
             ,
             keywords: 'cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
             ,
-            hours: 'Opening Hours:  Mon - Fri : 9.00 am - 7.00 pm'
+            hours: 'Opening Hours:  Mon - Fri : 9.00 am - 6.30 pm'
             ,
             email_label: 'Mail Us Today'
             ,
