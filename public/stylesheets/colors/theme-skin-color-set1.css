@@ -151,7 +151,7 @@ COLOR CODE: #1196CC
 }
 
 .modern-header.modern-header-theme-colored .header-nav .header-nav-wrapper.scroll-to-fixed-fixed {
-    background: #002E5B;
+    background: #380A13;
 }
 
 /* -------- Text Theme Color ---------- */
@@ -266,7 +266,7 @@ blockquote.gray.bg-theme-colored footer {
 }
 
 .bg-theme-colored-transparent-5 {
-    background-color: rgba(0, 46, 91, 0.5) !important;
+    background-color: #9EA4D3 !important;
 }
 
 .bg-theme-colored-transparent-4 {
@@ -637,8 +637,8 @@ fieldset[disabled] .btn-gray.btn-theme-colored.focus {
 */
 .btn-theme-colored {
     color: #fff;
-    background-color: #002E5B;
-    border-color: #002E5B;
+    background-color: #380A13;
+    border-color: #9EA4D3;
 }
 
 .btn-theme-colored:focus,

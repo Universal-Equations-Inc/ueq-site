@@ -19,7 +19,7 @@ router.get('/', function (req, res, next) {
             ,
             location_label: 'Company Location'
             ,
-            location_address: 'Greater Philadelphia Area'
+            location_address: 'Greater Philadelphia Area, PA'
             ,
             home: 'Home'
             ,
