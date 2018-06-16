@@ -1,8 +1,8 @@
 {
-  "name": "ueq-nodejs-express-site",
+  "name": "ueq-site",
   "version": "0.0.0",
   "engines": {
-    "node": "10.4.0"
+    "node": "10.4"
   },
   "private": true,
   "scripts": {
