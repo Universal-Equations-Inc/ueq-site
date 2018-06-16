@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('ueq-nodejs-express-site:server');
+var debug = require('debug')('ueq-site:server');
 var http = require('http');
 var enforce = require('express-sslify');
 
@@ -20,7 +20,8 @@ app.set('port', port);
  * Create HTTP server.
  */
 
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+//app.use(enforce.HTTPS({ trustProtoHeader: true }));
+app.use(enforce.HTTPS());
 
 var server = http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
