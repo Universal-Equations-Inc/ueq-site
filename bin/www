@@ -19,8 +19,12 @@ app.set('port', port);
 /**
  * Create HTTP server.
  */
+console.log("Creating HTTP server in " + process.env.NODE_ENV + " environment");
 
+if(process.env.NODE_ENV === 'production'){
+console.log("enforcing HTTPS redirect")
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
+}
 //app.use(enforce.HTTPS());
 
 var server = http.createServer(app).listen(app.get('port'), function() {
