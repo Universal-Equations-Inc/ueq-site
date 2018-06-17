@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 if(process.env.NODE_ENV === 'production'){
-console.log("enforcing HTTPS redirect")
+console.log("enforcing HTTPS redirect");
 app.use(function(request, response){
   if(!request.secure){
     response.redirect("https://" + request.headers.host + request.url);
