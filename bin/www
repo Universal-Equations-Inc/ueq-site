@@ -21,10 +21,10 @@ app.set('port', port);
  */
 console.log("Creating HTTP server in " + (process.env.NODE_ENV || 'dev') + " environment");
 
-//if(process.env.NODE_ENV === 'production'){
-//console.log("enforcing HTTPS redirect")
-//app.use(enforce.HTTPS({ trustProtoHeader: true }));
-//}
+if(process.env.NODE_ENV === 'production'){
+console.log("enforcing HTTPS redirect");
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
+}
 
 var server = http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
