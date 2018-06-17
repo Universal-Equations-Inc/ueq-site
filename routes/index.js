@@ -1,5 +1,14 @@
 var express = require('express');
 var router = express.Router();
+const sitemap = require('sitemap');
+
+const sm = sitemap.createSitemap ({
+    hostname: 'https://uequations.com',
+    cacheTime: 600 * 1000,
+    urls: [
+        { url: '/', changefreq: 'hourly', priority: 1.0 }
+    ]
+});
 
 const BLOG_URL = 'http://blogs.uequations.com';
 const SHOP_URL = 'https://shop.uequations.com';
@@ -43,6 +52,17 @@ router.get('/shop', function (req, res, next) {
 router.get('/blog', function (req, res, next) {
 
     res.redirect(BLOG_URL);
+});
+
+/* GET sitemap.xml */
+router.get('/sitemap.xml', function(req, res) {
+    sm.toXML( function (err, xml) {
+        if (err) {
+            return res.status(500).end();
+        }
+        res.header('Content-Type', 'application/xml');
+        res.send(xml);
+    });
 });
 
 
