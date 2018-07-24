@@ -1,6 +1,13 @@
 {
-  "name": "ueq-site",
-  "version": "0.0.0",
+  "name": "UEQ_Site",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Mensah Alkebu-Lan <malkebu-lan@uequations.com",
+  "homepage": "https://github.com/uequations/ueq-site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uequations/ueq-site.git"
+  },
   "engines": {
     "node": "10.4"
   },
@@ -22,8 +29,10 @@
     "newrelic": "^4.1.5"
   },
   "devDependencies": {
+    "del": "^3.0.0",
     "grunt": "^1.0.3",
     "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-watch": "^1.1.0"
+    "grunt-contrib-watch": "^1.1.0",
+    "gulp": "^4.0.0"
   }
 }

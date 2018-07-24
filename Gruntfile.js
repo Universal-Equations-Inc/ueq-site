@@ -14,9 +14,10 @@ module.exports = function (grunt) {
         jshint: {
             options: {
                 esversion: 6,
+                node: true,
                 laxcomma: true
             },
-            files: ['*.js','routes/*.js','views/*.js']
+            files: ['*.js','src/routes/*.js','src/views/*.js']
         },
         
         watch: {

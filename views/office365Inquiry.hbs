@@ -1,0 +1,228 @@
+<link href="/stylesheets/office365Inquiry.css" rel="stylesheet" type="text/css">
+<script src="/javascripts/office365Inquiry.js"></script>
+
+<div id="wrapper" class="clearfix">
+
+    <!-- Header -->
+    <header id="header" class="header modern-header modern-header-theme-colored">
+        <div class="header-top bg-theme-colored sm-text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="widget text-white">
+                            <i class="fa fa-clock-o text-theme-colored2"></i> {{hours}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle p-0 bg-light xs-text-center">
+            <div class="container pt-30 pb-30">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="widget sm-text-center">
+                            <i class="fa fa-envelope text-theme-colored2 font-32 mt-5 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
+                            <a href="#" class="font-12 text-gray text-uppercase">{{email_label}}</a>
+                            <h5 class="font-13 text-black m-0"> {{email_address}}</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-6">
+                        <div class="widget text-center">
+                            <a class="" href="index-mp-layout1.html"><img src="/images/logo-wide.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="widget sm-text-center">
+                            <i class="fa fa-building-o text-theme-colored2 font-32 mt-5 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
+                            <a href="#" class="font-12 text-gray text-uppercase">{{location_label}}</a>
+                            <h5 class="font-13 text-black m-0"> {{location_address}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-nav-wrapper navbar-scrolltofixed">
+                <div class="container">
+                    <nav id="menuzord" class="menuzord blue">
+                        <ul class="menuzord-menu">
+                            <li class="home"><a href="#"><i class="fa fa-home font-28"></i></a></li>
+                            <li class="active"><a href="/">{{home}}</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- vertical spacing -->
+    <br/><br/><br/><br/>
+
+    <!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+    <div class="zf-templateWidth">
+        <form action='https://forms.zohopublic.com/uequations/form/ClientDetails/formperma/LYA5hGbsxtMCvILccTDHxNfEDS-x-_FUJvbp2h6X-1k/htmlRecords/submit'
+              name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();'
+              accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden"
+                                                                                    name="zf_referrer_name"
+                                                                                    value="">
+            <!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+            <input type="hidden" name="zf_redirect_url" value="https://www.uequations.com">
+            <!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+            <input type="hidden" name="zc_gad" value="">
+            <!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+            <div class="zf-templateWrapper"><!---------template Header Starts Here---------->
+                <ul class="zf-tempHeadBdr">
+                    <li class="zf-tempHeadContBdr"><h2 class="zf-frmTitle"><em>Let us help you get started with MS
+                        Office
+                        365</em></h2>
+                        <p class="zf-frmDesc">Fill out the form below and we’ll have an Office 365 sales expert contact
+                            you.
+                            Our experts can answer questions, provide more information, and help you understand what
+                            Office
+                            365 can do for you or your business.</p>
+                        <div class="zf-clearBoth"></div>
+                    </li>
+                </ul><!---------template Header Ends Here---------->
+                <!---------template Container Starts Here---------->
+                <div class="zf-subContWrap zf-leftAlign">
+                    <ul>
+                        <!---------Name Starts Here---------->
+                        <li class="zf-tempFrmWrapper zf-name zf-namemedium"><label class="zf-labelName">Name
+                            <em class="zf-important">*</em>
+                        </label>
+                            <div class="zf-tempContDiv">
+                                <div>
+                                <span> <input type="text" maxlength="255" name="Name_First" invlovedinsalesiq=false
+                                              fieldType=7 checktype="c1"/><label>First</label> </span>
+                                    <span class="zf-last"> <input type="text" maxlength="255" invlovedinsalesiq=false
+                                                                  fieldType=7 name="Name_Last"
+                                                                  checktype="c1"/><label>Last</label> </span>
+                                    <div class="zf-clearBoth"></div>
+                                </div>
+                                <p id="Name_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li><!---------Name Ends Here---------->
+                        <!---------Email Starts Here---------->
+                        <li class="zf-tempFrmWrapper zf-medium"><label class="zf-labelName">Email
+                            <em class="zf-important">*</em>
+                        </label>
+                            <div class="zf-tempContDiv"><span> <input fieldType=9 invlovedinsalesiq=false type="text"
+                                                                      maxlength="255" name="Email" checktype="c5"
+                                                                      value=""/></span>
+                                <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li><!---------Email Ends Here---------->
+                        <!---------Phone Starts Here---------->
+                        <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Phone
+                            <em class="zf-important">*</em>
+                        </label>
+                            <div class="zf-tempContDiv">
+                                <div>
+                                    <input invlovedinsalesiq=false type="text" name="PhoneNumber_countrycode"
+                                           compname="PhoneNumber" checktype="c7" phoneFormat="1" maxlength="20" value=""
+                                           id="international_PhoneNumber_countrycode" fieldType="11"/>
+                                    <div class="zf-clearBoth"></div>
+                                </div>
+                                <p id="PhoneNumber_error" class="zf-errorMessage" style="display:none;">Invalid
+                                    value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li><!---------Phone Ends Here---------->
+                        <!---------Single Line Starts Here---------->
+                        <li class="zf-tempFrmWrapper zf-medium"><label class="zf-labelName">Company
+                        </label>
+                            <div class="zf-tempContDiv"><span>
+<input type="text" name="SingleLine1" checktype="c1" value="" maxlength="255" invlovedinsalesiq=false/> </span>
+                                <p id="SingleLine1_error" class="zf-errorMessage" style="display:none;">Invalid
+                                    value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li><!---------Single Line Ends Here---------->
+                        <!---------Dropdown Starts Here---------->
+                        <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Job Role
+                        </label>
+                            <div class="zf-tempContDiv"><select class="zf-form-sBox" name="Dropdown2" checktype="c1">
+                                <option selected="true" value="-Select-">-Select-</option>
+                                <option value="Job Role ... *">Job Role ... *</option>
+                                <option value="IT Professional">IT Professional</option>
+                                <option value="IT Director">IT Director</option>
+                                <option value="CIO">CIO</option>
+                                <option value="Business Manager">Business Manager</option>
+                                <option value="Executive Officer">Executive Officer</option>
+                                <option value="Owner/CEO">Owner/CEO</option>
+                                <option value="Other">Other</option>
+                            </select>
+                                <p id="Dropdown2_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li><!---------Dropdown Ends Here---------->
+                        <!---------Dropdown Starts Here---------->
+                        <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Company Size
+                        </label>
+                            <div class="zf-tempContDiv"><select class="zf-form-sBox" name="Dropdown1" checktype="c1">
+                                <option selected="true" value="-Select-">-Select-</option>
+                                <option value="Company size ... *">Company size ... *</option>
+                                <option value="1">1</option>
+                                <option value="2-4">2-4</option>
+                                <option value="5-9">5-9</option>
+                                <option value="10-24">10-24</option>
+                                <option value="25-49">25-49</option>
+                                <option value="50-249">50-249</option>
+                                <option value="250-999">250-999</option>
+                                <option value="1000+">1000+</option>
+                            </select>
+                                <p id="Dropdown1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li><!---------Dropdown Ends Here---------->
+                        <!---------Radio Starts Here---------->
+                        <li class="zf-radio zf-tempFrmWrapper zf-sideBySide"><label class="zf-labelName">Preferred
+                            contact
+                            method
+                            <em class="zf-important">*</em>
+                        </label>
+                            <div class="zf-tempContDiv">
+                                <div class="zf-overflow">
+<span class="zf-multiAttType">
+<input class="zf-radioBtnType" type="radio" id="Radio_1" name="Radio" checktype="c1" value="Email">
+<label for="Radio_1" class="zf-radioChoice">Email</label> </span>
+                                    <span class="zf-multiAttType">
+<input class="zf-radioBtnType" type="radio" id="Radio_2" name="Radio" checktype="c1" value="Phone">
+<label for="Radio_2" class="zf-radioChoice">Phone</label> </span>
+                                    <div class="zf-clearBoth"></div>
+                                </div>
+                                <p id="Radio_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li><!---------Radio Ends Here---------->
+                        <!---------Multiple Line Starts Here---------->
+                        <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Questions or Comments
+                        </label>
+                            <div class="zf-tempContDiv"><span> <textarea name="MultiLine" checktype="c1"
+                                                                         maxlength="65535"></textarea> </span>
+                                <p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li><!---------Multiple Line Ends Here---------->
+                    </ul>
+                </div><!---------template Container Starts Here---------->
+                <ul>
+                    <li class="zf-fmFooter">
+                        <button class="zf-submitColor">Contact Me</button>
+                    </li>
+                </ul>
+            </div><!-- 'zf-templateWrapper' ends --></form>
+    </div><!-- 'zf-templateWidth' ends -->
+
+</div>
+
+<script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+var zf_MandArray = [ "Name_First", "Name_Last", "Email", "PhoneNumber_countrycode", "Radio"];
+var zf_FieldArray = [ "Name_First", "Name_Last", "Email", "PhoneNumber_countrycode", "SingleLine1", "Dropdown2", "Dropdown1", "Radio", "MultiLine"];
+var isSalesIQIntegrationEnabled = false;
+
+
+
+</script>
