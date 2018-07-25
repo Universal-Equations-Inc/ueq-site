@@ -80,6 +80,39 @@ router.get('/office365Inquiry', function (req, res, next) {
     );
 });
 
+/* GET Privacy Policy page */
+router.get('/privacy', function (req, res, next) {
+    res.render('privacy', {
+            title: 'Universal Equations, Inc. | Privacy Policy'
+            ,
+            description: 'Universal Equations, Inc. | The Best in Strategy, Consulting, Digital, Technology and Operations Services'
+            ,
+            keywords: 'cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
+            ,
+            hours: 'Opening Hours:  Mon - Fri : 9.00 am - 6.30 pm'
+            ,
+            email_label: 'Mail Us Today'
+            ,
+            email_address: 'support@uequations.com'
+            ,
+            location_label: 'Company Location'
+            ,
+            location_address: 'Greater Philadelphia Area, PA'
+            ,
+            home: 'Home'
+            ,
+            blog: 'Blog'
+            ,
+            shop: 'Shop'
+            ,
+            phone_label: ' +(267) 775 3011'
+            ,
+            phone_href: 'tel:+(267) 775 3011'
+
+        }
+    );
+});
+
 /* GET shop */
 router.get('/shop', function (req, res, next) {
     res.redirect(SHOP_URL);
