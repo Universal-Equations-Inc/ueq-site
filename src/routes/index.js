@@ -12,6 +12,7 @@ const sm = sitemap.createSitemap ({
 
 const BLOG_URL = 'http://blogs.uequations.com';
 const SHOP_URL = 'https://shop.uequations.com';
+const GOVT_INQ_URL = "https://www.fedbizdirectory.com/business/d/080587713"
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -133,6 +134,11 @@ router.get('/sitemap.xml', function(req, res) {
         res.header('Content-Type', 'application/xml');
         res.send(xml);
     });
+});
+
+/* GET governtment inquiries page */ https://www.fedbizdirectory.com/business/d/080587713
+router.get('/govtInquiry', function (req, res, next) {
+    res.redirect(GOVT_INQ_URL);
 });
 
 
