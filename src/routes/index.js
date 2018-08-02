@@ -136,7 +136,7 @@ router.get('/sitemap.xml', function(req, res) {
     });
 });
 
-/* GET governtment inquiries page */ https://www.fedbizdirectory.com/business/d/080587713
+/* GET governtment inquiries page */
 router.get('/govtInquiry', function (req, res, next) {
     res.redirect(GOVT_INQ_URL);
 });
