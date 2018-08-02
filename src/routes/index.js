@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 const sitemap = require('sitemap');
 
 const sm = sitemap.createSitemap ({
@@ -12,7 +12,7 @@ const sm = sitemap.createSitemap ({
 
 const BLOG_URL = 'http://blogs.uequations.com';
 const SHOP_URL = 'https://shop.uequations.com';
-const GOVT_INQ_URL = "https://www.fedbizdirectory.com/business/d/080587713"
+const GOVT_INQ_URL = "https://www.fedbizdirectory.com/business/d/080587713";
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
