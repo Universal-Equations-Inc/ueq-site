@@ -957,6 +957,10 @@ footer.bg-deep {
     width: 100% !important;
 }
 
+.img-halfwidth {
+    width: 50% !important;
+}
+
 /* -------- Absolute Image Positioning ---------- */
 .overflow-visible {
     overflow: visible !important;
