@@ -6,7 +6,11 @@ const sm = sitemap.createSitemap ({
     hostname: 'https://uequations.com',
     cacheTime: 600 * 1000,
     urls: [
-        { url: '/', changefreq: 'hourly', priority: 1.0 }
+        { url: '/', changefreq: 'hourly', priority: 1.0 },
+        { url: '/error', changefreq: 'hourly', priority: 1.0 },
+        { url: '/capeStatement', changefreq: 'hourly', priority: 1.0 },
+        { url: '/office365Inquiry', changefreq: 'hourly', priority: 1.0 },
+        { url: '/privacy', changefreq: 'hourly', priority: 1.0 }
     ]
 });
 
