@@ -86,7 +86,8 @@ router.get('/', function (req, res, next) {
             ,
             office_365: 'Microsoft Office 365'
             ,
-            pitch: 'Select from a broad selection of enterprise-grade Cloud Computing solutions.'
+            pitch: 'Select from a broad selection of enterprise-grade Cloud Computing solutions.',
+            analytics_description: 'We help you use powerful technologies to develop data-based insights and predictive capabilities that drive bottom line results.'
         }
     );
 });
