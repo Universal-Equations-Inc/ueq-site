@@ -10,19 +10,25 @@ const sm = sitemap.createSitemap ({
         { url: '/error', changefreq: 'hourly', priority: 1.0 },
         { url: '/capeStatement', changefreq: 'hourly', priority: 1.0 },
         { url: '/office365Inquiry', changefreq: 'hourly', priority: 1.0 },
-        { url: '/privacy', changefreq: 'hourly', priority: 1.0 }
+        { url: '/privacy', changefreq: 'hourly', priority: 1.0 },
+        { url: '/wiki', changefreq: 'hourly', priority: 1.0 },
+        { url: '/shop', changefreq: 'hourly', priority: 1.0 },
+        { url: '/blog', changefreq: 'hourly', priority: 1.0 }
     ]
 });
 
+/* external URLs */
 const BLOG_URL = 'http://blogs.uequations.com';
 const SHOP_URL = 'https://shop.uequations.com';
 const GOVT_INQ_URL = "https://www.fedbizdirectory.com/business/d/080587713";
 const COMCAST_URL = "https://my.xfinity.com";
+const WIKI_URL = 'https://wiki.uequations.com';
+const CCOMPUTEDEFN_URL = 'https://csrc.nist.gov/publications/detail/sp/800-145/final';
 
 /* GET about us page. */
 router.get('/about', function (req, res, next) {
     res.render('about', {
-            title: 'Universal Equations, Inc. | Welcome'
+            title: 'Universal Equations, Inc. | About'
             ,
             description: 'Universal Equations, Inc. | The Best in Strategy, Consulting, Digital, Technology and Operations Services'
             ,
@@ -36,7 +42,11 @@ router.get('/about', function (req, res, next) {
             ,
             location_label: 'Company Location'
             ,
-            location_address: 'Greater Philadelphia Area, PA'
+            location_street: '325 Sentry Parkway,'
+            ,
+            location_building: 'Building 5 West, Suite 200,'
+            ,
+            location_address: 'Blue Bell, Pennsylvania 19422'
             ,
             home: 'Home'
             ,
@@ -64,7 +74,7 @@ router.get('/', function (req, res, next) {
             ,
             keywords: 'cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
             ,
-            hours: 'Opening Hours:  Mon - Fri : 9.00 am - 6.30 pm'
+            hours: 'Reception Hours:  Mon - Fri : 9.00 am - 4.30 pm'
             ,
             email_label: 'Mail Us Today'
             ,
@@ -72,7 +82,11 @@ router.get('/', function (req, res, next) {
             ,
             location_label: 'Company Location'
             ,
-            location_address: 'Greater Philadelphia Area, PA'
+            location_street: '325 Sentry Parkway,'
+            ,
+            location_building: 'Building 5 West, Suite 200,'
+            ,
+            location_address: 'Blue Bell, Pennsylvania 19422'
             ,
             home: 'Home'
             ,
@@ -107,9 +121,11 @@ router.get('/office365Inquiry', function (req, res, next) {
             ,
             email_address: 'support@uequations.com'
             ,
-            location_label: 'Company Location'
+            location_street: '325 Sentry Parkway,'
             ,
-            location_address: 'Greater Philadelphia Area, PA'
+            location_building: 'Building 5 West, Suite 200,'
+            ,
+            location_address: 'Blue Bell, Pennsylvania 19422'
             ,
             home: 'Home'
             ,
@@ -142,7 +158,11 @@ router.get('/privacy', function (req, res, next) {
             ,
             location_label: 'Company Location'
             ,
-            location_address: 'Greater Philadelphia Area, PA'
+            location_street: '325 Sentry Parkway,'
+            ,
+            location_building: 'Building 5 West, Suite 200,'
+            ,
+            location_address: 'Blue Bell, Pennsylvania 19422'
             ,
             home: 'Home'
             ,
@@ -156,6 +176,16 @@ router.get('/privacy', function (req, res, next) {
 
         }
     );
+});
+
+/* NIST Cloud Computing Definition */
+router.get('/c-compute-defn', function (req, res, next) {
+    res.redirect(CCOMPUTEDEFN_URL);
+});
+
+/* GET wiki */
+router.get('/wiki', function (req, res, next) {
+    res.redirect(WIKI_URL);
 });
 
 /* GET shop */
@@ -202,7 +232,11 @@ router.get('/capeStatement', function (req, res, next) {
             ,
             location_label: 'Company Location'
             ,
-            location_address: 'Greater Philadelphia Area, PA'
+            location_street: '325 Sentry Parkway,'
+            ,
+            location_building: 'Building 5 West, Suite 200,'
+            ,
+            location_address: 'Blue Bell, Pennsylvania 19422'
             ,
             home: 'Home'
             ,
