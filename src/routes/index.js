@@ -32,7 +32,7 @@ router.get('/about', function (req, res, next) {
             ,
             description: 'Universal Equations, Inc. | The Best in Strategy, Consulting, Digital, Technology and Operations Services'
             ,
-            keywords: 'cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
+            keywords: 'data analytics,cloud storage,cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
             ,
             hours: 'Opening Hours:  Mon - Fri : 9.00 am - 6.30 pm'
             ,
