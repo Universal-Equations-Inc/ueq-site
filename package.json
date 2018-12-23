@@ -9,7 +9,7 @@
     "url": "https://github.com/uequations/ueq-site.git"
   },
   "engines": {
-    "node": "10.4"
+    "node": ">=0.10.0"
   },
   "private": true,
   "scripts": {
@@ -17,21 +17,27 @@
     "test": "grunt"
   },
   "dependencies": {
+    "@oracle/oraclejet": "~6.0.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "express-sslify": "^1.2.0",
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0",
-    "npm": "^6.1.0",
+    "morgan": "^1.9.1",
+    "npm": "^6.5.0",
     "sitemap": "^1.13.0"
   },
   "devDependencies": {
     "del": "^3.0.0",
     "grunt": "^1.0.3",
+    "@oracle/grunt-oraclejet": "~6.0.0",
+    "load-grunt-config": "0.19.2",
+    "@oracle/oraclejet-tooling": "~6.0.0",
+    "qunit-reporter-junit": "^1.1.1",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-watch": "^1.1.0",
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "qunit": "^2.4.1"
   }
 }
