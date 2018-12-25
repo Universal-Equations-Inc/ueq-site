@@ -13,7 +13,8 @@ const sm = sitemap.createSitemap ({
         { url: '/privacy', changefreq: 'hourly', priority: 1.0 },
         { url: '/wiki', changefreq: 'hourly', priority: 1.0 },
         { url: '/shop', changefreq: 'hourly', priority: 1.0 },
-        { url: '/blog', changefreq: 'hourly', priority: 1.0 }
+        { url: '/blog', changefreq: 'hourly', priority: 1.0 },
+        { url: '/events', changefreq: 'hourly', priority: 1.0 }
     ]
 });
 
@@ -24,6 +25,46 @@ const GOVT_INQ_URL = "https://www.fedbizdirectory.com/business/d/080587713";
 const COMCAST_URL = "https://my.xfinity.com";
 const WIKI_URL = 'https://wiki.uequations.com';
 const CCOMPUTEDEFN_URL = 'https://csrc.nist.gov/publications/detail/sp/800-145/final';
+
+/* GET about us page. */
+router.get('/events', function (req, res, next) {
+    res.render('events', {
+            title: 'Universal Equations, Inc. | Events'
+            ,
+            description: 'Universal Equations, Inc. | The Best in Strategy, Consulting, Digital, Technology and Operations Services'
+            ,
+            keywords: 'data analytics,cloud storage,cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
+            ,
+            hours: 'Opening Hours:  Mon - Fri : 9.00 am - 6.30 pm'
+            ,
+            email_label: 'Mail Us Today'
+            ,
+            email_address: 'support@uequations.com'
+            ,
+            location_label: 'Company Location'
+            ,
+            location_street: '325 Sentry Parkway,'
+            ,
+            location_building: 'Building 5 West, Suite 200,'
+            ,
+            location_address: 'Blue Bell, Pennsylvania 19422'
+            ,
+            home: 'Home'
+            ,
+            blog: 'Blog'
+            ,
+            shop: 'Shop'
+            ,
+            phone_label: ' +(267) 775 3011'
+            ,
+            phone_href: 'tel:+(267) 775 3011'
+            ,
+            office_365: 'Microsoft Office 365'
+            ,
+            pitch: 'Select from a broad selection of enterprise-grade Cloud Computing solutions.'
+        }
+    );
+});
 
 /* GET about us page. */
 router.get('/about', function (req, res, next) {

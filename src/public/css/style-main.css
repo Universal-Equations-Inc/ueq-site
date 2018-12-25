@@ -78,14 +78,14 @@ This file contains the common styles of this theme.
 * Footer
 * ===============================================
 */
-@import "../stylesheets/font-awesome.min.css";
-@import "../stylesheets/font-awesome-animation.min.css";
-@import "../stylesheets/pe-icon-7-stroke.css";
-@import "../stylesheets/elegant-icons.css";
+@import "../css/font-awesome.min.css";
+@import "../css/font-awesome-animation.min.css";
+@import "../css/pe-icon-7-stroke.css";
+@import "../css/elegant-icons.css";
 /* @import "../css/icomoon.css"; */
 /* @import "../css/ionicons.css"; */
 /* @import "../css/stroke-gap-icons.css"; */
-@import "../stylesheets/utility-classes.css";
+@import "../css/utility-classes.css";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Open+Sans:400,600,700,800');
 
 /*
@@ -1031,7 +1031,7 @@ section > .container-fluid {
 }
 
 .layer-overlay.overlay-dark-5::before {
-    background-color: rgba(17, 17, 17, 0.5);
+    background-color: #380A13;
 }
 
 .layer-overlay.overlay-dark-6::before {

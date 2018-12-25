@@ -2,6 +2,6 @@ User-agent: *
 Disallow: /ajax-load/
 Disallow: /fonts/
 Disallow: /images/
-Disallow: /javascripts/
-Disallow: /stylesheets/
+Disallow: /js/
+Disallow: /css/
 Disallow: .htaccess
