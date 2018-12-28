@@ -81,26 +81,28 @@
                             <li class="home"><a href="#"><i class="fa fa-home font-28"></i></a></li>
                             <li class="active"><a href="/">{{home}}</a></li>
 
-                            <li class=""><a href="/shop">{{shop}}</a></li>
                             <li><a href="#">Inquiries</a>
                                 <ul class="dropdown">
-                                    <li><a href="#mailing_form">General</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
                                     <li><a href="/office365Inquiry">{{office_365}}</a></li>
                                     <li><a href="/govtInquiry">Government</a></li>
                                     <li><a href="/capeStatement">Capability Statement</a></li>
                                 </ul>
                             </li>
+
                             <li><a href="#">Company</a>
                                 <ul class="dropdown">
                                     <li><a href="/about">About Us</a></li>
                                 </ul>
                             </li>
+
                             <li><a href="#">Community</a>
                                 <ul class="dropdown">
                                     <li><a href="/wiki">Wiki</a></li>
                                     <li><a href="/events">Events</a></li>
                                 </ul>
                             </li>
+
                             <li class=""><a href="#">Resources</a>
                                 <ul class="dropdown">
                                     <li><a href="https://aws.amazon.com/">Amazon Web Services</a>
@@ -112,6 +114,9 @@
                                     <li><a href="https://www.openstack.org/">OpenStack</a></li>
                                 </ul>
                             </li>
+
+                            <li class=""><a href="/shop">{{shop}}</a></li>
+
                             <li class="active pull-right"><a href="{{phone_href}}" class="font-20 line-height-1"><i
                                     class="pe-7s-call mr-10 font-28"></i>{{phone_label}}</a></li>
                         </ul>
@@ -760,10 +765,10 @@
         <div class="container pt-70 pb-40">
             <div class="row border-bottom">
 
-                <div class="col-sm-4 col-md-2">
+                <div class="col-sm-8 col-md-4">
                     <div class="widget dark">
                         <h5 class="widget-title mb-10">Connect With Us</h5>
-                        <ul class="styled-icons icon-bordered icon-sm">
+                        <ul class="styled-icons icon-bordered icon-sm" style="padding-left: 0px;">
                             <li><a href="https://www.facebook.com/uequations"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="https://twitter.com/uequations"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="https://www.linkedin.com/company/universal-equations-inc"><i
@@ -772,7 +777,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-8 col-md-4">
                     <div class="widget dark">
                         <h5 class="widget-title mb-10">Useful Links</h5>
                         <ul class="list angle-double-right list-border">
@@ -782,7 +787,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-8 col-md-4">
                     <div class="widget dark">
                         <h5 class="widget-title mb-10">Twitter Feed</h5>
                         <div class="list-border clearfix">
@@ -792,54 +797,6 @@
                                 uequations</a>
                             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                    <div id="mailing_form" class="widget dark">
-                        <h5 class="widget-title mb-10">Subscribe to our Mailing List</h5>
-                        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
-                              method="POST"
-                              class="newsletter-form">
-                            <div class="input-group">
-                                <input type=hidden name='captcha_settings'
-                                       value='{"keyname":"uequations_site","fallback":"true","orgId":"00D6A000001Wef6","ts":""}'>
-                                <input type=hidden name="oid" value="00D6A000001Wef6">
-                                <input type=hidden name="retURL" value="https://www.uequations.com">
-
-                                <!--  ----------------------------------------------------------------------  -->
-                                <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-                                <!--  these lines if you wish to test in debug mode.                          -->
-                                <!--  <input type="hidden" name="debug" value=1>                              -->
-                                <!--  <input type="hidden" name="debugEmail"                                  -->
-                                <!--  value="malkebu-lan@uequations.com">                                     -->
-                                <!--  ----------------------------------------------------------------------  -->
-
-                                <label for="first_name">First Name</label><input class="form-control input-lg font-16"
-                                                                                 id="first_name" maxlength="40"
-                                                                                 name="first_name" size="20"
-                                                                                 type="text"/><br>
-
-                                <label for="last_name">Last Name</label><input class="form-control input-lg font-16"
-                                                                               id="last_name" maxlength="80"
-                                                                               name="last_name" size="20"
-                                                                               type="text"/><br>
-
-                                <label for="email">Email</label><input class="form-control input-lg font-16" id="email"
-                                                                       maxlength="80" name="email" size="20"
-                                                                       type="text"/><br>
-
-                                <input type="hidden" name="Campaign_ID" value="7016A000000T0qFQAS">
-
-                                <input type="submit" name="submit"
-                                       class="btn btn-flat btn-theme-colored text-uppercase mt-10 mr-10 mb-sm-30"
-                                       data-loading-text="Please wait..."><br><br>
-
-                                <div class="g-recaptcha" data-sitekey="6LcyqV4UAAAAAMnUAMutlAgh7V-Z4OZV9tgP0QA8"></div>
-                                <br>
-
-                            </div>
-                        </form>
                     </div>
                 </div>
 
