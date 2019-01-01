@@ -156,7 +156,7 @@ COLOR CODE: #1196CC
 
 /* -------- Text Theme Color ---------- */
 .text-theme-colored {
-    color: #002E5B !important;
+    color: #380A13 !important;
 }
 
 .text-hover-theme-colored:hover {
@@ -499,8 +499,8 @@ fieldset[disabled] .btn-border.btn-theme-colored.focus {
 */
 .btn-dark.btn-theme-colored {
     color: #fff;
-    background-color: #002E5B;
-    border-color: #002E5B;
+    background-color: #380A13;
+    border-color: #380A13;
 }
 
 .btn-dark.btn-theme-colored:focus,
