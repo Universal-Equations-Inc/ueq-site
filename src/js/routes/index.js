@@ -14,7 +14,8 @@ const sm = sitemap.createSitemap ({
         { url: '/wiki', changefreq: 'hourly', priority: 1.0 },
         { url: '/shop', changefreq: 'hourly', priority: 1.0 },
         { url: '/blog', changefreq: 'hourly', priority: 1.0 },
-        { url: '/events', changefreq: 'hourly', priority: 1.0 }
+        { url: '/events', changefreq: 'hourly', priority: 1.0 },
+        { url: '/about', changefreq: 'hourly', priority: 1.0 }
     ]
 });
 
@@ -29,9 +30,9 @@ const CCOMPUTEDEFN_URL = 'https://csrc.nist.gov/publications/detail/sp/800-145/f
 /* GET Dec Newsletter page. */
 router.get('/newsletter-dec', function (req, res, next) {
     res.render('newsletter-2018-dec', {
-            title: 'Universal Equations, Inc. | December Newsletter'
+            title: 'Universal Equations Cloud Computing and Data Analytics | December Newsletter'
             ,
-            description: 'Universal Equations, Inc. | The Best in Strategy, Consulting, Digital, Technology and Operations Services'
+            description: 'Universal Equations, Inc. | The Best in Cloud Computing and Data Analytics Consulting, Strategy, and Implementation Services'
             ,
             keywords: 'data analytics,cloud storage,cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
             ,
@@ -69,9 +70,9 @@ router.get('/newsletter-dec', function (req, res, next) {
 /* GET Events page. */
 router.get('/events', function (req, res, next) {
     res.render('events', {
-            title: 'Universal Equations, Inc. | Events'
+            title: 'Universal Equations Cloud Computing and Data Analytics | Events'
             ,
-            description: 'Universal Equations, Inc. | The Best in Strategy, Consulting, Digital, Technology and Operations Services'
+            description: 'Universal Equations, Inc. | The Best in Cloud Computing and Data Analytics Consulting, Strategy, and Implementation Services'
             ,
             keywords: 'data analytics,cloud storage,cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
             ,
@@ -107,9 +108,9 @@ router.get('/events', function (req, res, next) {
 /* GET About Us page. */
 router.get('/about', function (req, res, next) {
     res.render('about', {
-            title: 'Universal Equations, Inc. | About'
+            title: 'Universal Equations Cloud Computing and Data Analytics | About'
             ,
-            description: 'Universal Equations, Inc. | The Best in Strategy, Consulting, Digital, Technology and Operations Services'
+            description: 'Universal Equations, Inc. | The Best in Cloud Computing and Data Analytics Consulting, Strategy, and Implementation Services'
             ,
             keywords: 'data analytics,cloud storage,cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
             ,
@@ -145,9 +146,9 @@ router.get('/about', function (req, res, next) {
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('index', {
-            title: 'Universal Equations, Inc. | Welcome'
+            title: 'Universal Equations Cloud Computing and Data Analytics | Welcome'
             ,
-            description: 'Universal Equations, Inc. | The Best in Strategy, Consulting, Digital, Technology and Operations Services'
+            description: 'Universal Equations, Inc. | The Best in Cloud Computing and Data Analytics Consulting, Strategy, and Implementation Services'
             ,
             keywords: 'cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
             ,
@@ -185,9 +186,9 @@ router.get('/', function (req, res, next) {
 /* GET Microsoft Office 365 Inquiry Form. */
 router.get('/contact', function (req, res, next) {
     res.render('contact', {
-            title: 'Universal Equations, Inc. | Office 365 Inquiry Form'
+            title: 'Universal Equations Cloud Computing and Data Analytics | General Inquiry Form'
             ,
-            description: 'Universal Equations, Inc. | The Best in Strategy, Consulting, Digital, Technology and Operations Services'
+            description: 'Universal Equations, Inc. | The Best in Cloud Computing and Data Analytics Consulting, Strategy, and Implementation Services'
             ,
             keywords: 'cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
             ,
@@ -220,9 +221,9 @@ router.get('/contact', function (req, res, next) {
 /* GET Microsoft Office 365 Inquiry Form. */
 router.get('/office365Inquiry', function (req, res, next) {
     res.render('office365Inquiry', {
-            title: 'Universal Equations, Inc. | Office 365 Inquiry Form'
+            title: 'Universal Equations Cloud Computing and Data Analytics | Office 365 Inquiry Form'
             ,
-            description: 'Universal Equations, Inc. | The Best in Strategy, Consulting, Digital, Technology and Operations Services'
+            description: 'Universal Equations, Inc. | The Best in Cloud Computing and Data Analytics Consulting, Strategy, and Implementation Services'
             ,
             keywords: 'cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
             ,
@@ -255,9 +256,9 @@ router.get('/office365Inquiry', function (req, res, next) {
 /* GET Privacy Policy page */
 router.get('/privacy', function (req, res, next) {
     res.render('privacy', {
-            title: 'Universal Equations, Inc. | Privacy Policy'
+            title: 'Universal Equations Cloud Computing and Data Analytics | Privacy Policy'
             ,
-            description: 'Universal Equations, Inc. | The Best in Strategy, Consulting, Digital, Technology and Operations Services'
+            description: 'Universal Equations, Inc. | The Best in Cloud Computing and Data Analytics Consulting, Strategy, and Implementation Services'
             ,
             keywords: 'cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
             ,
@@ -329,9 +330,9 @@ router.get('/govtInquiry', function (req, res, next) {
 /* GET Privacy Policy page */
 router.get('/capeStatement', function (req, res, next) {
     res.render('capeStatement', {
-            title: 'Universal Equations, Inc. | Capability Statement'
+            title: 'Universal Equations Cloud Computing and Data Analytics | Capability Statement'
             ,
-            description: 'Universal Equations, Inc. | The Best in Strategy, Consulting, Digital, Technology and Operations Services'
+            description: 'Universal Equations, Inc. | The Best in Cloud Computing and Data Analytics Consulting, Strategy, and Implementation Services'
             ,
             keywords: 'cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
             ,
