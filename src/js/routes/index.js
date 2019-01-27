@@ -28,6 +28,46 @@ const WIKI_URL = 'https://wiki.uequations.com';
 const CCOMPUTEDEFN_URL = 'https://csrc.nist.gov/publications/detail/sp/800-145/final';
 
 /* GET Dec Newsletter page. */
+router.get('/newsletter-jan', function (req, res, next) {
+    res.render('newsletter-2019-jan', {
+            title: 'Universal Equations Cloud Computing and Data Analytics | January Newsletter'
+            ,
+            description: 'Universal Equations, Inc. | The Best in Cloud Computing and Data Analytics Consulting, Strategy, and Implementation Services'
+            ,
+            keywords: 'data analytics,cloud storage,cloud, cloud computing, oracle cloud, cloud services, cloud hosting, private cloud, iot devices, hybrid cloud, oracle cloud services, cloud technology'
+            ,
+            hours: 'Opening Hours:  Mon - Fri : 9.00 am - 4.30 pm'
+            ,
+            email_label: 'Contact Us Today'
+            ,
+            email_address: 'support@uequations.com'
+            ,
+            location_label: 'Company Location'
+            ,
+            location_street: '325 Sentry Parkway,'
+            ,
+            location_building: 'Building 5 West, Suite 200,'
+            ,
+            location_address: 'Blue Bell, Pennsylvania 19422'
+            ,
+            home: 'Home'
+            ,
+            blog: 'Blog'
+            ,
+            shop: 'Shop'
+            ,
+            phone_label: ' +(267) 775 3011'
+            ,
+            phone_href: 'tel:+(267) 775 3011'
+            ,
+            office_365: 'Microsoft Office 365'
+            ,
+            newsletter_date: 'January 2019'
+        }
+    );
+});
+
+/* GET Dec Newsletter page. */
 router.get('/newsletter-dec', function (req, res, next) {
     res.render('newsletter-2018-dec', {
             title: 'Universal Equations Cloud Computing and Data Analytics | December Newsletter'
@@ -38,7 +78,7 @@ router.get('/newsletter-dec', function (req, res, next) {
             ,
             hours: 'Opening Hours:  Mon - Fri : 9.00 am - 4.30 pm'
             ,
-            email_label: 'Mail Us Today'
+            email_label: 'Contact Us Today'
             ,
             email_address: 'support@uequations.com'
             ,
@@ -78,7 +118,7 @@ router.get('/events', function (req, res, next) {
             ,
             hours: 'Opening Hours:  Mon - Fri : 9.00 am - 4.30 pm'
             ,
-            email_label: 'Mail Us Today'
+            email_label: 'Contact Us Today'
             ,
             email_address: 'support@uequations.com'
             ,
@@ -116,7 +156,7 @@ router.get('/about', function (req, res, next) {
             ,
             hours: 'Opening Hours:  Mon - Fri : 9.00 am - 4.30 pm'
             ,
-            email_label: 'Mail Us Today'
+            email_label: 'Contact Us Today'
             ,
             email_address: 'support@uequations.com'
             ,
@@ -154,7 +194,7 @@ router.get('/', function (req, res, next) {
             ,
             hours: 'Reception Hours:  Mon - Fri : 9.00 am - 4.30 pm'
             ,
-            email_label: 'Mail Us Today'
+            email_label: 'Contact Us Today'
             ,
             email_address: 'support@uequations.com'
             ,
@@ -194,7 +234,7 @@ router.get('/contact', function (req, res, next) {
             ,
             hours: 'Opening Hours:  Mon - Fri : 9.00 am - 4.30 pm'
             ,
-            email_label: 'Mail Us Today'
+            email_label: 'Contact Us Today'
             ,
             email_address: 'support@uequations.com'
             ,
@@ -229,7 +269,7 @@ router.get('/office365Inquiry', function (req, res, next) {
             ,
             hours: 'Opening Hours:  Mon - Fri : 9.00 am - 4.30 pm'
             ,
-            email_label: 'Mail Us Today'
+            email_label: 'Contact Us Today'
             ,
             email_address: 'support@uequations.com'
             ,
@@ -264,7 +304,7 @@ router.get('/privacy', function (req, res, next) {
             ,
             hours: 'Opening Hours:  Mon - Fri : 9.00 am - 4.30 pm'
             ,
-            email_label: 'Mail Us Today'
+            email_label: 'Contact Us Today'
             ,
             email_address: 'support@uequations.com'
             ,
@@ -338,7 +378,7 @@ router.get('/capeStatement', function (req, res, next) {
             ,
             hours: 'Opening Hours:  Mon - Fri : 9.00 am - 4.30 pm'
             ,
-            email_label: 'Mail Us Today'
+            email_label: 'Contact Us Today'
             ,
             email_address: 'support@uequations.com'
             ,
