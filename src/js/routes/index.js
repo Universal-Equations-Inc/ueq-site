@@ -3,7 +3,7 @@ const router = express.Router();
 const sitemap = require('sitemap');
 
 const sm = sitemap.createSitemap ({
-    hostname: 'https://uequations.com',
+    hostname: 'https://www.uequations.com',
     cacheTime: 600 * 1000,
     urls: [
         { url: '/', changefreq: 'hourly', priority: 1.0 },
