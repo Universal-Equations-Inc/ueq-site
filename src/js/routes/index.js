@@ -15,7 +15,9 @@ const sm = sitemap.createSitemap ({
         { url: '/shop', changefreq: 'hourly', priority: 1.0 },
         { url: '/blog', changefreq: 'hourly', priority: 1.0 },
         { url: '/events', changefreq: 'hourly', priority: 1.0 },
-        { url: '/about', changefreq: 'hourly', priority: 1.0 }
+        { url: '/about', changefreq: 'hourly', priority: 1.0 },
+        { url: '/newsletter-jan', changefreq: 'hourly', priority: 1.0 },
+        { url: '/newsletter-dec', changefreq: 'hourly', priority: 1.0 }
     ]
 });
 
